@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Jared Dunbar - MP251 sp2017</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript">
+
+function stp() {
+  audio.pause();
+}
+
+</script>
+</head>
+<body>
+  <div>
+    <h1>Jared Dunbar - Spring 2017</h1>
+    <p>
+      COSI for credit - 2 credit hours
+    </p>
+  </div>
+  <div>
+    <h2>COSI Stuff</h2>
+    <p>
+      Kept the lab clean, participated in all meetings that I could get to (exception being I can't miss exams<!-- Thanks Maciel.. really the students of our class because they insisted that it was the /best/ time -->).
+    </p>
+    <p>
+      Volunteered for Hack Potsdam, did setup and stayed through the night.
+    </p>
+    <p>
+      Gave 3 whole lightning talks:
+    </p>
+    <ul>
+      <li><a href="http://adventurega.me/bootstrap/" target="_blank">Every Bootstrap Site Ever</a></li>
+      <li><a href="http://web2.clarkson.edu/projects/cosi/sp2017/students/dunbarj/power.html" target="_blank">Raspberry Pi Power Usage</a></li>
+      <li><a href="http://shattered.io/" target="_blank">Google "breaks" SHA1</a></li>
+    </ul>
+    <p>
+      Gave a small group of 3 workshops titled "How it do?" - we covered:
+    </p>
+    <ul>
+      <li>Server Room operations</li>
+      <li>How to maintain VMs</li>
+      <li>An Arch Linux install with software raid</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Projects</h2>
+    <p>
+      Renamed Management to Stat (because I like how it sounds :D). Working gradually on moving to a new codebase which is partially C/C++. Currently writing on displaying network data in a simple, readable way. Also, wrote some stuff to use JavaScript in the browser instead of expensive/insecure CGI operations.
+    </p>
+    <p>
+      Working with Graham to debug bash. We were debugging <a href="http://gmx.cosi.clarkson.edu/" target="_blank">GMx</a> (the VM that is the COSI game server), which we would occasionally have bash crash. When you run gdb on the bash process to debug this issue, when you stepped the instruction pointer, it would crash the entire server, including the VM host. We forwarded a resulting bash bug to the developers of bash, and moved to a version of the kernel where Linux would not misbehave with a certain processor feature.
+    </p>
+  </div>
+  <div>
+    <h2>Outreach programs</h2>
+    <p>
+      Taught three sessions of IgniteCS - the Python Classess and Functions session, the Scratch session, and the GPIO session. The latter two were a huge success - students were extremely excited to work with hardware and create games. Also worked hard to try and unify the Clarkson CS Outreach Program.
+    </p>
+  </div>
+  <div>
+    <h2>Server Room Stuff</h2>
+    <h3>Virtual Machines</h3>
+    <p>
+      Migrated away from Bennu, and installed Grand-Dad. Maintained VMs, and reinstalled Odin and Docs with new Debian versions.
+    </p>
+    <p>
+      Reinstalled Hydra with Arch Linux because it had a more stable kernel than both Debian and Ubuntu at the time. Stability&#8482;
+    </p>
+    <h3>Network Stuff</h3>
+    <p>
+      Replaced main COSI network switch which were dead.
+    </p>
+    <p>
+      Configured network switches to have bonded interfaces with the two VM hosts. It is now possible to transfer files between the two VM hosts at up to 2 Gigabit.
+    </p>
+    <p>
+      Communicated with OIT about reducing our ARP traffic. Come to find out, there's not much we can do. ~25kb/s is going to be the norm from now on for ARP traffic. A way to resolve this issue would be to become firewalled, but we strongly suggest against it. It's much easier for us to internally firewall on both Ziltoid and then on the clients, and disregard the ARP.
+    </p>
+  </div>
+  <div id="music">
+    <audio src="http://gmx.cosi.clarkson.edu/music/tricks.mp3" style="display:hidden" autoplay></audio>
+  </div>
+</body>
+</html>
