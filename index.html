@@ -16,7 +16,7 @@ function stp() {
   <div>
     <h1>Jared Dunbar - Spring 2017</h1>
     <p>
-      COSI for credit - 2 credit hours
+      COSI for credit - 2 credit hours <!-- Dangit! Should have done three! Next semester...  -->
     </p>
   </div>
   <div>
@@ -25,15 +25,20 @@ function stp() {
       Kept the lab clean, participated in all meetings that I could get to (exception being I can't miss exams<!-- Thanks Maciel.. really the students of our class because they insisted that it was the /best/ time -->).
     </p>
     <p>
+      Worked Accepted Students Day, Open House, etc. Cleaned the room, taught potential students about the university, general aid to new potential students.
+    </p>
+    <p>
       Volunteered for Hack Potsdam, did setup and stayed through the night.
     </p>
     <p>
-      Gave 3 whole lightning talks:
+      Gave 5 whole lightning talks:
     </p>
     <ul>
       <li><a href="http://adventurega.me/bootstrap/" target="_blank">Every Bootstrap Site Ever</a></li>
       <li><a href="http://web2.clarkson.edu/projects/cosi/sp2017/students/dunbarj/power.html" target="_blank">Raspberry Pi Power Usage</a></li>
       <li><a href="http://shattered.io/" target="_blank">Google "breaks" SHA1</a></li>
+      <li><a href="http://reddit.com/r/place" target="_blank">/r/place</a></li>
+      <li><a href="http://go.ja13.org" target="_blank">GoAccess Web Analytics</a></li>
     </ul>
     <p>
       Gave a small group of 3 workshops titled "How it do?" - we covered:
@@ -50,13 +55,16 @@ function stp() {
       Renamed Management to Stat (because I like how it sounds :D). Working gradually on moving to a new codebase which is partially C/C++. Currently writing on displaying network data in a simple, readable way. Also, wrote some stuff to use JavaScript in the browser instead of expensive/insecure CGI operations.
     </p>
     <p>
+      Created a telnet honeypot for Network Security, and collected interesting information on some botnets.
+    </p>
+    <p>
       Working with Graham to debug bash. We were debugging <a href="http://gmx.cosi.clarkson.edu/" target="_blank">GMx</a> (the VM that is the COSI game server), which we would occasionally have bash crash. When you run gdb on the bash process to debug this issue, when you stepped the instruction pointer, it would crash the entire server, including the VM host. We forwarded a resulting bash bug to the developers of bash, and moved to a version of the kernel where Linux would not misbehave with a certain processor feature.
     </p>
   </div>
   <div>
     <h2>Outreach programs</h2>
     <p>
-      Taught three sessions of IgniteCS - the Python Classess and Functions session, the Scratch session, and the GPIO session. The latter two were a huge success - students were extremely excited to work with hardware and create games. Also worked hard to try and unify the Clarkson CS Outreach Program.
+      Taught three sessions of IgniteCS - the Python Classess and Functions session, the Scratch session, and the GPIO session. The latter two were a huge success - students were extremely excited to work with hardware and create games. Also worked hard to try and unify the Clarkson CS Outreach Program. Filled the position of co-director.
     </p>
   </div>
   <div>
@@ -70,13 +78,13 @@ function stp() {
     </p>
     <h3>Network Stuff</h3>
     <p>
-      Replaced main COSI network switch which were dead.
+      Replaced main COSI network switch which was dead.
     </p>
     <p>
       Configured network switches to have bonded interfaces with the two VM hosts. It is now possible to transfer files between the two VM hosts at up to 2 Gigabit.
     </p>
     <p>
-      Communicated with OIT about reducing our ARP traffic. Come to find out, there's not much we can do. ~25kb/s is going to be the norm from now on for ARP traffic. A way to resolve this issue would be to become firewalled, but we strongly suggest against it. It's much easier for us to internally firewall on both Ziltoid and then on the clients, and disregard the ARP.
+      Communicated with OIT about reducing our ARP traffic. Come to find out, there's not much we can do. ~25kb/s is going to be the norm from now on for ARP traffic. A way to resolve this issue would be to become firewalled, but we strongly suggest against it. It's much easier for us to internally firewall on both Ziltoid and then on the clients, and disregard the ARP. Perhaps ARP cache in the future would make more sense...
     </p>
   </div>
   <div id="music">
