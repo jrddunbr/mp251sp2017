@@ -13,6 +13,7 @@ function stp() {
 </script>
 </head>
 <body>
+  <!-- check out dem comments. Ironicly, half of the content is probably notes in the document and not in the presentation, but having information about how stuff do is important for posterity. -->
   <div>
     <h1>Jared Dunbar - Spring 2017</h1>
     <p>
@@ -48,6 +49,12 @@ function stp() {
       <li>How to maintain VMs</li>
       <li>An Arch Linux install with software raid</li>
     </ul>
+    <p>
+      Helped in process of depricating and handing out older hardware from the GDC project.
+      <!-- Finally ending the "craprack" as it was. That was a ridiculous research project that we hope to have nipped in the bud, never to do again EVER. It involved leadership much worse than when I encountered IgniteCS. The purpose of the research was to see if colocation could be used to use cheap power in different locations to make running servers cheaper (turning off servers where it's expensive, turning it on where it's cheap), but ignored all of the overhead costs, which is why it was awful. In practice, this doesn't even make sense - Google moves containers of servers to the areas near the Superbowl each year, just to handle the shear amount of data, much unlike this cost avoidance research which would make user experiences awful or unusable in many cases where you weren't just running some small website, in such cases using a container would make much more sense. -->
+      This hardware was repurposed to interested students who wanted to run honeypots or use it for research.
+      <!-- The rule of thumb if it was worth it or not was if it was about equivelant in power to a raspberry pi, or slightly better. Much of it didn't pass this test, nevermind POST. The drives in those machines will either die tomorrow or last forever, and the rest of the hardware was quite jank, requiring some interesting BIOS CD's which can still be found scattered around COSI. Much a pain, since the only practical method to using them in any usable way was working with the PXE system we have going to bootstrap operating systems. -->
+    </p>
   </div>
   <div>
     <h2>Projects</h2>
@@ -90,5 +97,6 @@ function stp() {
   <div id="music">
     <audio src="http://gmx.cosi.clarkson.edu/music/tricks.mp3" style="display:hidden" autoplay></audio>
   </div>
+  <!-- Fun fact! I plan to do some infastructure upgrades over the summer of 2017, such as checking all of the networking in the ITL and then trying LAG for some of the switches to set that up in a better state (especially when we have lots of data from the server room to the ITL). We often hit the operational ceiling of our network's current 1G network, and since it's hub and spoke, we can't do much about throughput issues at the moment. This also means that when we update the ITL currently, there's not as much traffic throughput for COSI to Clarkson bandwidth, besides Mirror to Clarkson bandwidth, which doesn't get affected. This is much due to the system we have going with Ziltoid being the firewall, but the ITL not being behind it, but also that everything hubs around Ziltoid as it stands. Also, some VLAN's may be in order for the 146 network over the summer, to allow use of the 146 in network security VM's. Many plans to be had. :D -->
 </body>
 </html>
